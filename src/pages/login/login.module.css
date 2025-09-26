@@ -1,0 +1,67 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f6fa;
+}
+
+.loginBox {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; 
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+.logo {
+  width: 300px;
+  margin-bottom: 1.5rem;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.campoForm{
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   width: 100%;
+   
+      & label{
+         text-align: left;
+         font-weight: bold;
+      }
+  
+}
+
+.btnSignin {
+  background-color: #002274;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+
+
+.error {
+  margin-top: 0.7rem;
+  color: red;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
