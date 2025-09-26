@@ -1,73 +1,35 @@
-# React + TypeScript + Vite
+# Projeto React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto feito com **React**, **TypeScript** e **Vite** como parte do desafio para a vaga de **estágio na B2Bit**.  
+Ele possui páginas de login, perfil e autenticação via JWT, utilizando a API de teste.
 
-Currently, two official plugins are available:
+# Como Rodar o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Baixe ou clone o projeto**  
+   - Clone do GitHub:  
+     ```bash
+     git clone https://github.com/SEU_USUARIO/NOME_DO_PROJETO.git
+     cd NOME_DO_PROJETO
+     ```
+   - Ou baixe o ZIP e abra a pasta.
 
-## React Compiler
+2. **Instale as dependências**  
+   ```bash
+   npm install
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. **Rode o Projeto**  
+   ```bash
+    npm run dev
 
-## Expanding the ESLint configuration
+    Importante: rode o comando na pasta raiz do projeto.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+    O navegador deve abrir automaticamente.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+    Se não abrir, acesse: http://localhost:5173
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+4. **Login de teste** 
+    * Email: cliente@youdrive.com
+    * Senha: password
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+    Pronto! Você verá a página de perfil com nome, email e foto.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
