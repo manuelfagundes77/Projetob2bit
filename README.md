@@ -36,9 +36,9 @@ Ele possui páginas de login, perfil e autenticação via JWT, utilizando a API 
 
 ## Deploy / Versão Online
 
-O projeto está publicado no Vercel. Você pode acessar e testar a aplicação diretamente no navegador:
+O projeto está publicado no Vercel. Você pode acessar e testar a aplicação diretamente no navegador link abaixo:
 
-[Ver Projeto no Vercel](https://projetob2bit-eight.vercel.app/login)
+https://projetob2bit-eight.vercel.app/login
 
 O login de teste é:
 - **Email:** cliente@youdrive.com
