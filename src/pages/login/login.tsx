@@ -37,8 +37,10 @@ const Login: React.FC = () => {
     console.log("Token salvo:", localStorage.getItem("token")); // confirmar
     navigate("/profile"); 
     } catch (err: unknown) {
-      if (axios.isAxiosError(err)) {
+    if (axios.isAxiosError(err)) {
       if (err.response?.status === 400) {
+        setErrorMsg("Preencha todos os campos corretamente!");
+      } else if (err.response?.status === 401) {
         setErrorMsg("Email ou senha incorretos!");
       } else {
         setErrorMsg("Ocorreu um erro, tente novamente");
@@ -46,7 +48,7 @@ const Login: React.FC = () => {
     } else {
       setErrorMsg("Ocorreu um erro inesperado");
     }
-    }
+  }
   };
 
   return (
