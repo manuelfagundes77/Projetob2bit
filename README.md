@@ -44,5 +44,9 @@ O login de teste é:
 - **Email:** cliente@youdrive.com
 - **Senha:** password
 
+### Endpoints testados
+- **POST /login** → retorna o token de autenticação  
+- **/profile** → rota protegida no frontend, acessível apenas após login bem-sucedido
+
 > Observação: a versão online está usando a mesma API do projeto, então é necessário usar esses dados de teste para acessar o perfil.
 
